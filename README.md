@@ -1,9 +1,9 @@
-🏎️ F1 Track Simulation and Safety Analysis
+ F1 Track Simulation and Safety Analysis
 
 Welcome to the F1 Track Design and Safety Analysis MATLAB project!
 This simulation models a section of an F1 race track using cubic curves, and evaluates it for danger zones, curvature, and safe driving speeds — including a dynamic crash simulation and a simple animation showing the car moving on the track.
 
-📂 Contents
+ Contents
 
 main_script.m: The entire simulation in one script.
 
@@ -11,8 +11,8 @@ car.png: Image file representing the car in the animation (must be present in th
 
 README.md: You're reading it!
 
-🚀 Features
-✅ Track Generation
+ Features
+> Track Generation
 
 The track is modeled using a cubic polynomial:
 
@@ -60,7 +60,7 @@ x+A
 
 Realistic scaling is applied to convert units from simulation space to real-world kilometers.
 
-📏 Track Analysis
+>Track Analysis
 
 Track length is calculated using numerical integration.
 
@@ -68,32 +68,32 @@ Critical points (extrema of the curve) are identified using the first derivative
 
 Curvature (radius of curvature) is computed to detect sharp turns.
 
-⚠️ Danger Zone Detection
+> Danger Zone Detection
 
 Any point on the track with a curve radius less than 100 meters is flagged as dangerous.
 
 These points are visualized with yellow markers.
 
-🏁 Speed & Safety Analysis
+> Speed & Safety Analysis
 
 Calculates maximum safe speed at every sampled point on the track.
 
 Considers friction coefficient and banking angle to simulate realistic limits.
 
-💥 Crash Simulation
+> Crash Simulation
 
 Tests different speeds (150–300 km/h) to estimate where crashes might occur.
 
 Reports the percentage of the track where a crash would happen at each test speed.
 
-🎬 Animation (Optional)
+> Animation (Optional)
 
 An animated car image (car.png) moves along the track at a given test speed.
 
 Highlights danger zones dynamically if the car exceeds safe speed at any point.
 
 📸 Sample Output
-🏁 F1 Track Design and Analysis
+1. F1 Track Design and Analysis
 ===============================
 Track length: 1.263 km
 Critical Points:
@@ -116,13 +116,13 @@ Speed 200 km/h: ✅ Safe driving
 Speed 250 km/h: ⚠️  5 crash points (17.2% of track)
 Speed 300 km/h: ⚠️  25 crash points (86.2% of track)
 
-📦 Requirements
+2. Requirements
 
 MATLAB (Tested on R2021a or newer)
 
 car.png image file in the project directory
 
-🧠 How to Use
+3. How to Use
 
 Run the script: Open main_script.m in MATLAB and run it.
 
@@ -134,7 +134,7 @@ Optional Animation: When prompted, type y to see the car move along the track us
 
 Modify Parameters: Adjust friction, banking angle, or car speed to test different conditions.
 
-📌 Customization Tips
+4. Customization Tips
 
 Change Car Image: Replace car.png with any transparent PNG for a custom look.
 
@@ -142,7 +142,7 @@ Adjust Track Shape: Modify the cubic coefficients to change track curvature.
 
 Speed Test Range: Add or remove speeds from test_speeds array.
 
-🙌 Acknowledgments
+5. Acknowledgments
 
 Created as a MATLAB simulation project to demonstrate:
 
@@ -154,6 +154,6 @@ Basic animation and visualization
 
 Ideal for students learning numerical methods, vehicle dynamics, or just fans of Formula 1!
 
-🧑‍💻 Author
+6. Author
 
 Mayank Hete
